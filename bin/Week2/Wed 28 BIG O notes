@@ -1,0 +1,79 @@
+// SEPT 28
+
+
+
+
+Time complexity all companies care about this
+		// BIG o important for scallable operations, when a website crash it is bc
+		//it couldnt handle the many number of users
+		
+		// Good code : high readibility, covers all possible situations /edge case / one with the least algorithm
+		// 2 pillars to making good code
+		//1- readibility
+		//2- scalability = big O
+		
+				//Before code
+		String[] xas = {"volvo","bmw", "ford"};
+		for (int i= 0; i< xas.length ; i++) {
+			System.out.println(xas[i]);
+		}
+		
+		
+		//Improvements for readibility ;
+		// 1. putting comments // if code is complex, you write in begiinning , please do not touch variables abc funchtion for example
+		// 2. Meaningful variables / not xas / e.g car models
+		// 3. use for each
+		
+		
+		// After code / improved
+		
+		String[] carMakes = {"volvo","bmw", "ford"};
+		for (int carMakeIndex= 0; carMakeIndex< carMakes.length ; carMakeIndex++) {
+			System.out.println(carMakes[carMakeIndex]);// never use i, i is only for learning purposes, make sure to name it properly
+			
+			
+		// for each loop- more readable 
+			for (String carMake: carMakes) {
+				System.out.println(carMake);
+			}
+			
+			// to choose which loop to use: 
+			// if you want to play with indices use C FOR loop /normal formal
+			// but reduces readability
+			
+			// if data structure is an array meaning we are printing everything 
+			//use For Each loop
+			
+			//if it is an object
+			// use For In // will know in future
+			
+			
+			// PART 2 SCALABILITY
+			
+			
+			//Function 1 / person 1
+			// readability 5/10
+			
+			// Use case 1 
+			// function that processed 10 rows in 2 sec
+			
+			//Use 2 
+			// function that processed 1 million rows in 10 sec
+			
+			
+			
+			//function 2 / person 2
+			
+			// Use case 1 
+			// function that processed 10 rows in 2 sec
+						
+				
+			//Use 2 
+			// readability = 8/10
+		// function that processed 1 million rows in 90 sec
+			
+			//you select person 1 bc , a very code being complex can not be trained 
+			// readability can be trained , it takes more time to run on servers , more cost 
+			// so person 1 saves alot of money
+			// most important thing is time and less space to process action/less servers = money
+			// everyone can learn how to write code but not everyone will know how to write a complex/scallable code
